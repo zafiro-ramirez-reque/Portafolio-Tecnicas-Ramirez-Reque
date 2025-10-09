@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(225, 252, 252);
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    padding: 0;
+}
+
+.app-header {
+    margin: 0;
+    background-color: rgb(144, 0, 255);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.navigation {
+    background-color: rgb(132, 0, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    background-color: rgb(186, 94, 206);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgb(254, 0, 224);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.page-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.main-title {
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.title-divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    width: 60%;
+    margin: 20px auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-header {
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.personal-info-card {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+}
+.data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.data-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #2c3e50;
+    font-weight: 600;
+    min-width: 140px;
+    font-size: 1em;
+}
+
+.value {
+    color: #34495e;
+    font-size: 1em;
+    flex: 1;
+}
+
+.description-section {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-left: 5px solid #6887e4;
+}
+
+.description-content {
+    line-height: 1.6;
+}
+
+.description-text {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Sección del curso */
+.course-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-left: 5px solid #2ec9cc;
+    height: fit-content;
+}
+
+.course-info-content {
+    text-align: center;
+}
+
+.professors-title {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.professors-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.professor-card {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.professor-card:hover {
+    transform: translateY(-5px);
+}
+
+.theory-card {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.practice-card {
+    background: linear-gradient(135deg, #246ac6, #405ba4);
+    color: white;
+}
+
+.theory-label, .practice-label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.professor-name {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.professor-divider {
+    height: 2px;
+    background: rgba(255,255,255,0.3);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: rgb(223, 181, 255);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content.left,
+.content.right {
+    width: 48%;
+}
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+.title {
+    text-align: center;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .main-title {
+        font-size: 2.2em;
+    }
+    
+    .personal-info-card,
+    .description-section,
+    .course-section {
+        padding: 20px;
+    }
+    
+    .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .label {
+        min-width: auto;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
