@@ -289,3 +289,33 @@ a {
         gap: 10px;
     }
 }
+
+/* Estilos para la página de Clase 2 */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-field {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8x;
+}
+.btn-generar {
+    background-color:blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-generar:hover {
+    background-color: darkblue;
+}
